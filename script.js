@@ -33,10 +33,10 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Messages to show (for your first modal)
             const messages = [
-                "I love you too! ❤️",
-                "You are amazing! 😍",
-                "You make my day brighter! 🌞",
-                "Let's be best friends forever! 🤗"
+                "Baby, I hope you know I love you so much",
+        "And I am super grateful to have you in my life",
+        "With that being said...",
+        "I have a super duper important question for you"
             ];
             let messageIndex = 0;
         
