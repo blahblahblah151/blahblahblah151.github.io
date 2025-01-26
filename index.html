@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Modal Example</title>
+</head>
+<body>
+    <button id="loveButton">Click here if you love me</button>
+    <img id="img" src="dachshund-flowers.gif" alt="Three cute dachshunds holding flowers">
+
+    <!-- Modal Structure for ShowMessage -->
+    <div id="showMessageModal" class="modal">
+        <div class="modal-content">
+            <p id="showMessageText">This is your message!</p>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+
+    <!-- Label and Buttons -->
+    <div id="messageLabel" style="display: none; text-align: center; font-size: 20px; margin-top: 350px;">
+        Thank you for interacting! You are awesome! 💖
+    </div>
+    
+    <div id="buttonContainer" style="display: none; justify-content: center; margin-top: 20px;">
+        <button id="yesButton" class="button">Yes</button>
+        <button id="noButton" class="button">No</button>
+    </div>
+
+    <!-- Modal for First Scary Virus Message -->
+    <div id="virusModal" class="modal">
+        <div class="modal-content">
+            <h2>⚠️ WARNING! Your system has been compromised!</h2>
+            <p id="virusMessage">
+                <strong>URGENT: Your computer is infected by the malicious <span style="color: red;">HackedSystem-67</span> virus!</strong><br><br>
+                Files are being encrypted as we speak! Your personal data is at risk of being stolen.<br><br>
+                DO NOT attempt to restart your system, as doing so will worsen the damage!<br><br>
+                Please contact your system administrator immediately. Your security is compromised.<br><br>
+                <strong>Your system is no longer under your control!</strong>
+            </p>
+            <button id="virusModalCloseButton">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal for Virus Warning -->
+    <div id="virusWarningModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>⚠️ WARNING! Your system has been compromised!</h2>
+            <p id="virusMessage">
+                <strong>URGENT: Your computer is infected by the malicious <span style="color: red;">HackedSystem-67</span> virus!</strong><br><br>
+                Files are being encrypted as we speak! Your personal data is at risk of being stolen.<br><br>
+                DO NOT attempt to restart your system, as doing so will worsen the damage!<br><br>
+                Please contact your system administrator immediately. Your security is compromised.<br><br>
+                <strong>Your system is no longer under your control!</strong>
+            </p>
+            <button id="virusWarningCloseButton">Close</button>
+        </div>
+    </div>
+
+    <!-- Follow-up Message Modal -->
+    <div id="followUpMessage" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2>⚠️ IMPORTANT: Virus Removal Attempt</h2>
+            <p>If you want to attempt to remove the virus, click Yes.<br>
+            If you want to continue the virus attack, click No.</p>
+            <button id="followUpMessageCloseButton">Close</button>
+        </div>
+    </div>
+
+    <!-- Special message and gif after pressing Yes style="max-width: 10000%; height: auto;"-->
+    <div id="yayMessage" style="display:none; text-align: center;">
+        <img id="yayGif" src="cartoon.gif" alt="Cartoon gif showing celebration" >
+        <p>Yaeyyy!!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ec88eb;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 650px;
+}
+
+#loveButton {
+    font-size: 22px;
+    background-color: #ed8aa1;
+    margin-top: 30px;
+}
+
+#loveButton:hover {
+    background-color: rgb(193, 148, 236);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: transparent;  /* Remove the overlay */
+    padding-top: 0;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#closeButton, #virusCloseButton, #followUpCloseButton {
+    background-color: #6a4cff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure the button is clickable */
+}
+
+#closeButton:hover, #virusCloseButton:hover, #followUpCloseButton:hover {
+    background-color: rgb(171, 93, 244);
+}
+
+#messageLabel {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    display: none;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+#yesButton {
+    background-color: green;
+    color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#yesButton:hover {
+    background-color: darkgreen;
+}
+
+#noButton {
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#noButton:hover {
+    background-color: darkred;
+}
+
+/* Virus warning modal */
+#virusModal h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Follow-up message modal (with Close button only) */
+#followUpCloseButton {
+    background-color: #d3d3d3; /* Neutral greyish color */
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure the button is clickable */
+}
+
+#followUpCloseButton:hover {
+    background-color: #b0b0b0; /* Darker grey on hover */
+}
+
+#yayGif {
+    /*display: block;*/
+    position: absolute;
+    top: -130px; /* This ensures it stays at the very top */
+    left: 50%; /* Center the gif horizontally */
+    transform: translateX(-50%); /* Perfect horizontal centering */
+    width: 100000000%; /* Make the gif 80% of the page width */
+    height: auto; /* Maintain the aspect ratio */
+    /*z-index: 10;  Make sure it's above other elements */
+}
+
+#yayMessage {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 300px; /* Keep the "Yaeyyy!" text where it was */
+    left: 50%; /* Center the content horizontally */
+    transform: translateX(-50%); /* Perfectly center it */
+    z-index: 2; /* Ensure the text is on top of the gif */
+}
+
+
+
+#yayMessage p {
+    font-size: 50px; /* Increase the font size of the "Yaeyyy!" text */
+    color: #fff; /* White text for contrast */
+    margin-top: 20px; /* Space between the gif and the text */
+}
+
+
