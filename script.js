@@ -1,8 +1,8 @@
 /*document.getElementById("loveButton").addEventListener("click", function() {
-    alert("Thank you for clicking! I love you too! ❤️");
-    alert("You are awesome!");
-    alert("I really appreciate your support!");
-    alert("Let's be best friends forever! 🤗");
+    alert("Baby, I hope you know I love you so much") ;
+  alert("And I am super grateful to have you in my life") ;
+  alert("With that being said...") ;
+  alert("I have a super duper important question for you") ;
 });*/
 
 /*document.addEventListener('DOMContentLoaded', function() {
