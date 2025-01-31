@@ -106,6 +106,6 @@ document.getElementById("yesButton").addEventListener("click", function () {
             });
         });
 
-console.log(document.getElementById("img"));
+
 
          
