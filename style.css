@@ -166,4 +166,12 @@ img {
     margin-top: 20px; /* Space between the gif and the text */
 }
 
+@media only screen and (max-width: 600px) {
+    img {
+        width: 80%; /* Adjust according to your design */
+        max-width: 100%; 
+    }
+}
+
+
 
