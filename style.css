@@ -182,7 +182,7 @@ img {
     #img {
         width: 80%;  /* Adjust width for mobile */
         max-width: 60%;
-        height: 40%;  /* Make sure the aspect ratio stays correct */
+        height: 50%;  /* Make sure the aspect ratio stays correct */
     }
 }
 
