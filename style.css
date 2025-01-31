@@ -10,12 +10,12 @@ h1 {
     color: #333;
 }
 
-#img {
+img {
     max-width: 100%;
     height: auto;
     position: absolute;
     top: 100px;
-    left: 50%;  /* Center the image horizontally */
+    left: 50%;
     transform: translateX(-50%); /* Ensure it's centered */
     z-index: 1;  /* Ensure it's above other content */
 }
