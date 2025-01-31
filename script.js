@@ -105,5 +105,7 @@ document.getElementById("yesButton").addEventListener("click", function () {
                 document.getElementById("virusWarningModal").style.display = "none"; // Close the virus warning modal
             });
         });
-        
+
+console.log(document.getElementById("img"));
+
          
