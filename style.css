@@ -11,7 +11,7 @@ h1 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 400px;
     height: auto;
     position: absolute;
     top: 100px;
@@ -145,7 +145,7 @@ img {
     top: -130px; /* This ensures it stays at the very top */
     left: 50%; /* Center the gif horizontally */
     transform: translateX(-50%); /* Perfect horizontal centering */
-    width: 100000000%; /* Make the gif 80% of the page width */
+    width: 100%; /* Make the gif 80% of the page width */
     height: auto; /* Maintain the aspect ratio */
     /*z-index: 10;  Make sure it's above other elements */
 }
