@@ -139,6 +139,16 @@ img {
     background-color: #b0b0b0; /* Darker grey on hover */
 }
 
+#img {
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%); /* Ensure it's centered */
+    z-index: 1;  /* Ensure it's above other content */    
+}
+
 #yayGif {
     /*display: block;*/
     position: absolute;
