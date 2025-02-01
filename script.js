@@ -34,9 +34,9 @@
             // Messages to show (for your first modal)
             const messages = [
                 "Baby, I hope you know I love you so much",
-  "And I'm super grateful to have you in my life",
-  "With that being said...",
-  "I have a super duper important question for you"
+                "And I'm super grateful to have you in my life",
+                "With that being said...",
+                "I have a super duper important question for you"
             ];
             let messageIndex = 0;
         
@@ -55,6 +55,17 @@
                 } else {
                     document.getElementById("showMessageModal").style.display = "none";
                     messageIndex = 0; // Reset for next time
+        
+                    // Hide the love button after the 4th message
+                    document.getElementById("loveButton").style.display = "none";
+        
+                    // Move the image up by changing the 'top' property to -50px
+                    const img = document.getElementById("img");
+                    img.style.transition = "top 0.0001s ";  // Smooth transition with a longer duration (1s)
+                   // img.style.transition = "top 0.5s";  // Adding a smooth transition
+                    img.style.absolute = "relative"; // Make sure 'top' works (it needs a relative or absolute position)
+                    img.style.top = "40px";  // Move the img element up by 50px
+                    img.style.left = "50%";
         
                     // Show the label and buttons after modal is closed
                     const label = document.getElementById("messageLabel");
@@ -82,29 +93,25 @@
             });
         
             // Handle "Yes" button in the virus warning modal to attempt virus removal
-document.getElementById("yesButton").addEventListener("click", function () {
-    // Remove the alert here to focus just on hiding elements and showing the success message
-    // alert("Attempting to remove the virus... But you may have been compromised! 😱");
-
-    // Hide all current elements after the "Yes" button is clicked
-    document.getElementById("virusWarningModal").style.display = "none"; // Close the virus warning modal
-    document.getElementById("virusModal").style.display = "none"; // Close the first virus modal
-    document.getElementById("messageLabel").style.display = "none"; // Hide the thank you label
-    document.getElementById("buttonContainer").style.display = "none"; // Hide the yes/no buttons
-    document.getElementById("showMessageModal").style.display = "none"; // Hide the first message modal
-    document.getElementById("loveButton").style.display = "none"; // Hide the love button
-    document.getElementById("img").style.display = "none"; // Hide any other images
-
-    // Show the "cartoon.gif" and "Yaeyyy!" text
-    document.getElementById("yayMessage").style.display = "block"; // Show the text "Yaeyyy!"
-});
-
+            document.getElementById("yesButton").addEventListener("click", function () {
+                // Remove the alert here to focus just on hiding elements and showing the success message
+                // alert("Attempting to remove the virus... But you may have been compromised! 😱");
+        
+                // Hide all current elements after the "Yes" button is clicked
+                document.getElementById("virusWarningModal").style.display = "none"; // Close the virus warning modal
+                document.getElementById("virusModal").style.display = "none"; // Close the first virus modal
+                document.getElementById("messageLabel").style.display = "none"; // Hide the thank you label
+                document.getElementById("buttonContainer").style.display = "none"; // Hide the yes/no buttons
+                document.getElementById("showMessageModal").style.display = "none"; // Hide the first message modal
+                document.getElementById("loveButton").style.display = "none"; // Hide the love button
+                document.getElementById("img").style.display = "none"; // Hide any other images
+        
+                // Show the "cartoon.gif" and "Yaeyyy!" text
+                document.getElementById("yayMessage").style.display = "block"; // Show the text "Yaeyyy!"
+            });
         
             // Close the virus warning modal when the "virusWarningCloseButton" is clicked
             document.getElementById("virusWarningCloseButton").addEventListener("click", function () {
                 document.getElementById("virusWarningModal").style.display = "none"; // Close the virus warning modal
             });
         });
-
-
-         
