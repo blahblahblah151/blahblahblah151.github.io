@@ -64,7 +64,7 @@
                     img.style.transition = "top 0.0001s ";  // Smooth transition with a longer duration (1s)
                    // img.style.transition = "top 0.5s";  // Adding a smooth transition
                     img.style.absolute = "relative"; // Make sure 'top' works (it needs a relative or absolute position)
-                    img.style.top = "40px";  // Move the img element up by 50px
+                    img.style.top = "20px";  // Move the img element up by 50px
                     img.style.left = "50%";
         
                     // Show the label and buttons after modal is closed
