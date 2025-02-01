@@ -181,9 +181,9 @@ img {
 
 @media only screen and (max-width: 600px) {
     #img {
-        width: 80%;  /* Adjust width for mobile */
+        width: 70%;  /* Adjust width for mobile */
         max-width: 80%;
-        height: auto;  /* Make sure the aspect ratio stays correct */
+        height: 80%;  /* Make sure the aspect ratio stays correct */
     }
 }
 
